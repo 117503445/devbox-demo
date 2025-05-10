@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  default:
+    desc: "The default task" 
+    cmds:
+      - clear
+      - docker build -t 117503445/devbox .
+      - docker run -it --rm -v $(pwd):/workspace 117503445/devbox
