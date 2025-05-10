@@ -1,9 +1,14 @@
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.11.0/.schema/devbox.schema.json",
-  "packages": ["nodejs@latest"],
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.2/.schema/devbox.schema.json",
+  "packages": [
+    "nodejs@latest",
+    "zsh@latest"
+  ],
   "shell": {
     "init_hook": [
-      "echo 'Welcome to devbox!' > /dev/null"
+      "export PS1='📦 devbox> '",
+      "echo 'Welcome! See CONTRIBUTING.md for tips on contributing to devbox.'",
+      ""
     ],
     "scripts": {
       "test": [
